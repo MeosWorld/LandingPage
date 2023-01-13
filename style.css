@@ -41,8 +41,14 @@ li {
     padding-bottom: 100px;
 }
 
+.pres-main {
+    font-size: 48px;    
+}
+
 .logo {
     font-size: 24px;
+}
+.pres-main, .logo {
     color: #F9FAF8;
     font-weight: bold;
 }

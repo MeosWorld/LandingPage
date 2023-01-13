@@ -5,6 +5,9 @@ body {
 
 a {
     text-decoration: none;
+}
+
+a, .dark-subtext {
     font-size: 18px;
     color: #E5E7EB;
 }

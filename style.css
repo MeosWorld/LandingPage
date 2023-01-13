@@ -19,10 +19,6 @@ li {
     margin-left: 20px;
 }
 
-.header {
-    padding: 20px auto;
-}
-
 .header, .presentation {
     display: flex;
     background-color: #1F2937;

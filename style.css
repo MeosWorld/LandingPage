@@ -42,12 +42,14 @@ li {
 }
 
 .pres-main {
-    font-size: 48px;    
+    font-size: 48px;
+    min-width: 300px;
 }
 
 .logo {
     font-size: 24px;
 }
+
 .pres-main, .logo {
     color: #F9FAF8;
     font-weight: bold;

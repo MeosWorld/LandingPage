@@ -1,6 +1,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    max-width: 1970.87px;
+}
+
+p {
+    margin: 0;
 }
 
 a {
@@ -36,14 +41,17 @@ button {
     border-radius: 6px;
 }
 
-.header, .presentation, .showcase {
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+.header, .presentation, .showcase, .invitation {
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
-.header, .presentation {
+.header, .presentation, .showcase, .footer {
+    display: flex;
+    align-items: center;
+}
+
+.header, .presentation, .footer {
     background-color: #1F2937;
 }
 
@@ -52,16 +60,45 @@ button {
     justify-content: space-between;
 }
 
+.footer {
+    justify-content: center;
+    padding: 40px;
+}
+
 .presentation {
+    justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
     height: 290px;
 }
 
-.show-header {
-    color: #1F2937;
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 80px 300px;
+}
+
+.quote-text {
     font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: lighter;
+}
+
+.show-header, .quote-subline {
+    color: #1F2937;
     font-weight: bolder;
+}
+
+.show-header {
+    font-size: 36px;
+    margin: 36px;
+}
+
+.quote-subline {
+    font-size: 28px;
+    text-align: right;
 }
 
 .showcase {
@@ -104,7 +141,6 @@ button {
 .pres-main {
     font-size: 48px;
     min-width: 300px;
-    margin: 0;
 }
 
 .logo {
@@ -114,4 +150,36 @@ button {
 .pres-main, .logo {
     color: #F9FAF8;
     font-weight: bold;
+}
+
+.invi-frame {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3882F6;
+    padding: 40px 120px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 15px;
+    color: white;
+}
+
+.invi-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.invi-mainline {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.invi-subline, .invi-button {
+    font-size: 22px;
+}
+
+.invi-button {
+    border: 3px solid white;
+    border-radius: 15px;
+    margin: 3px 12px;
 }

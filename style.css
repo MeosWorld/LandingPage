@@ -8,8 +8,12 @@ a {
 }
 
 a, .dark-subtext {
-    font-size: 18px;
     color: #E5E7EB;
+}
+
+a, .dark-subtext, .show-text {
+    font-size: 18px;
+    margin: 0 5px;
 }
 
 ul {
@@ -23,27 +27,84 @@ li {
     margin-left: 20px;
 }
 
-.header, .presentation {
+button {
+    color: #E5E7EB;
+    font-weight: bold;
+    background-color: #3882F6;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 6px;
+}
+
+.header, .presentation, .showcase {
     display: flex;
-    background-color: #1F2937;
-    justify-content: space-between;
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
 }
 
+.header, .presentation {
+    background-color: #1F2937;
+}
+
 .header {
     padding-top: 20px;
+    justify-content: space-between;
 }
 
 .presentation {
     padding-top: 100px;
     padding-bottom: 100px;
+    height: 290px;
+}
+
+.show-header {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.showcase {
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.show-frames {
+    display: flex;
+    justify-content: space-around;
+}
+
+.show-frame {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.show-picture {
+    margin: 4px;
+    padding: 93px;
+    width: 0px;
+    border: 3px solid #3882F6;
+    border-radius: 15px;
+}
+
+.show-text {
+    text-align: center;
+    padding: 0px 7px;
+}
+
+.pres-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-right: 50px;
 }
 
 .pres-main {
     font-size: 48px;
     min-width: 300px;
+    margin: 0;
 }
 
 .logo {
